@@ -3,6 +3,11 @@ h1, .markdown-body {
   margin: 3em auto;
 }
 
+h1.header {
+  a {
+    color: inherit;
+  }
+}
 
 .article {
   margin-bottom: 3em;
@@ -10,5 +15,9 @@ h1, .markdown-body {
   &__header {
     display: flex;
     justify-content: space-between;
+  }
+
+  a.article__header-link {
+    color: inherit;
   }
 }

@@ -1,11 +1,5 @@
 {{#each model as |content|}}
-  <section id={{content.id}} class="article">
-    <h2 class="article__header">
-      {{content.title}}
-      <small><a href="https://github.com/Teamtailor/code-style/edit/master/content/{{content.id}}.md">edit</a></small>
-    </h2>
-    {{{content.html}}}
-  </section>
+  {{content-section content=content}}
 {{/each}}
 
 {{outlet}}
