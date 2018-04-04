@@ -4,6 +4,11 @@ h1, .markdown-body {
 }
 
 
-section {
+.article {
   margin-bottom: 3em;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+  }
 }
