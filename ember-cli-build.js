@@ -1,12 +1,24 @@
 'use strict';
 
 const EmberApp = require('ember-cli/lib/broccoli/ember-app');
+const BroccoliMergeTrees = require('broccoli-merge-trees');
+const StaticSiteJson = require('broccoli-static-site-json');
 
 module.exports = function(defaults) {
   let app = new EmberApp(defaults, {
     // Add options here
   });
 
+  let contentsJson = new StaticSiteJson(`content`, {
+    contentFolder: `content`,
+    type: 'contents',
+    collections: [
+      {
+        src: `content`,
+        output: `allContent.json`,
+      },
+    ],
+  });
   // Use `app.import` to add additional libraries to the generated
   // output files.
   //
@@ -20,5 +32,5 @@ module.exports = function(defaults) {
   // please specify an object with the list of modules as keys
   // along with the exports of each module as its value.
 
-  return app.toTree();
+  return new BroccoliMergeTrees([app.toTree(), contentsJson]);
 };
