@@ -41,6 +41,7 @@
     "eslint-config-prettier": "^2.9.0",
     "eslint-plugin-ember": "^5.1.0",
     "eslint-plugin-prettier": "^2.6.0",
+    "github-markdown-css": "^2.10.0",
     "loader.js": "^4.2.3",
     "prettier": "^1.11.1"
   },

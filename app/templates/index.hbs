@@ -1,6 +1,8 @@
 {{#each model as |content|}}
-  <h2>{{content.title}}</h2>
-  {{{content.html}}}
+  <section>
+    <h2>{{content.title}}</h2>
+    {{{content.html}}}
+  </section>
 {{/each}}
 
 {{outlet}}
