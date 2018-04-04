@@ -2,3 +2,8 @@ h1, .markdown-body {
   max-width: 980px;
   margin: 3em auto;
 }
+
+
+section {
+  margin-bottom: 3em;
+}
