@@ -1,5 +1,5 @@
 ---
-title: Use `get` and `set`
+title: Use <code>get</code> and <code>set</code>
 language: ember
 ---
 

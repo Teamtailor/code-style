@@ -28,6 +28,6 @@ https://github.com/netguru/ember-styleguide#data-down-action-up
 
     {{my-component
       isOpen=dropdownOpen
-      // `toggle` is a helper `from `DockYard/ember-composable-helpers`
+      // <code>toggle` is a helper `from `DockYard/ember-composable-helpers</code>
       onToggle=(action (toggle 'dropdownOpen' this))
     }}

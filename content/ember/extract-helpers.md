@@ -1,9 +1,9 @@
 ---
-title: Don’t be afraid to extract `utils` or `helpers`
+title: Don’t be afraid to extract <code>utils</code> or <code>helpers</code>
 language: ember
 ---
 
 > Add a good example on here
 
-* `add`, helper which add numbers together
-* `classnames`, util which figures out which classes to usex5
+* <code>add</code>, helper which add numbers together
+* <code>classnames</code>, util which figures out which classes to usex5

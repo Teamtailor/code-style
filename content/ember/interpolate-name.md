@@ -11,7 +11,7 @@ Using interpolation makes it really hard to grep through the code and know which
       // Bad
       componentName: function('type', function() {
         const type = get(this, 'type');
-        return `my-${type}-component`;
+        return <code>my-${type}-component</code>;
       }),
 
       // Good
@@ -24,4 +24,4 @@ Using interpolation makes it really hard to grep through the code and know which
       }),
     });
 
-Calling `grep my-foobar-component` will match in the second example and not the first one.
+Calling <code>grep my-foobar-component</code> will match in the second example and not the first one.

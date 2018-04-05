@@ -10,7 +10,7 @@ language: ember
       title: computed.alias('job.title'),
     });
 
-    // Bad, implied we're working with a `job` model
+    // Bad, implied we're working with a <code>job</code> model
     export default Controller.extend({
       title: computed.alias('model.title'),
     });

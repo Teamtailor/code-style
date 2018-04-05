@@ -1,5 +1,5 @@
 ---
-title: Always use the `action` keyword to pass actions.
+title: Always use the <code>action</code> keyword to pass actions.
 language: ember
 ---
 

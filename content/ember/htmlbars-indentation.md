@@ -19,4 +19,4 @@ language: ember
     {{/my-component}}
 
 Split on lines when line is longer than some limit (80)?
-Also ending `}}` in block form should be on new line
+Also ending <code>}}</code> in block form should be on new line

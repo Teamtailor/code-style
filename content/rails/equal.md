@@ -1,5 +1,5 @@
 ---
-title: Use `==` for checking equal, skip `eql?`
+title: Use <code>==</code> for checking equal, skip <code>eql?</code>
 language: rails
 ---
 

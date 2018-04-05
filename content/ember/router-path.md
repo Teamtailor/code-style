@@ -1,5 +1,5 @@
 ---
-title: Name dynamic segments in `router.js` with underscore
+title: Name dynamic segments in <code>router.js</code> with underscore
 language: ember
 ---
 

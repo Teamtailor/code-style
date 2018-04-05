@@ -1,5 +1,5 @@
 ---
-title: Always name actions to passed to components ` handle``{``Action `}
+title: Always name actions to passed to a component's <code>handle{Action}</code>
 language: ember
 ---
 
