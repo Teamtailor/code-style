@@ -2,7 +2,7 @@
   <div class="language-page__index">
     <ol>
       {{#each model.contents as |content|}}
-        <li>{{content.title}}</li>
+        <li>{{link-to content.strippedTitle "language.content" content}}</li>
       {{/each}}
     </ol>
   </div>
