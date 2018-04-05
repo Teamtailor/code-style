@@ -6,7 +6,11 @@ const StaticSiteJson = require('broccoli-static-site-json');
 
 module.exports = function(defaults) {
   let app = new EmberApp(defaults, {
-    // Add options here
+    'ember-prism': {
+      theme: 'okaidia',
+      components: ['scss', 'javascript', 'handlebars', 'ruby'],
+      plugins: ['normalize-whitespace'],
+    },
   });
 
   let contentsJson = new StaticSiteJson(`content`, {

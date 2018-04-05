@@ -3,9 +3,11 @@ title: Use <code>get</code> and <code>set</code>
 language: ember
 ---
 
-    // Good
-    import { set, get } from '@ember/object';
-    set(this, 'isSelected', true);
+```javascript
+// Good
+import { set, get } from '@ember/object';
+set(this, 'isSelected', true);
 
-    // Bad
-    this.set('isSelected', true);
+// Bad
+this.set('isSelected', true);
+```

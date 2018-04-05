@@ -3,8 +3,10 @@ title: Use <code>==</code> for checking equal, skip <code>eql?</code>
 language: rails
 ---
 
-    # Good
-    foo == "bar"
+```ruby
+  # Good
+  foo == "bar"
 
-    # Bad
-    foo.eql? "bar"
+  # Bad
+  foo.eql? "bar"
+```
