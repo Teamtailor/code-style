@@ -1,1 +1,12 @@
-{{liquid-outlet}}
+<div class="language-page">
+  <div class="language-page__index">
+    <ol>
+      {{#each model.contents as |content|}}
+        <li>{{content.title}}</li>
+      {{/each}}
+    </ol>
+  </div>
+  <div class="language-page__articles">
+    {{liquid-outlet}}
+  </div>
+</div>

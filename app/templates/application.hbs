@@ -1,11 +1,12 @@
-<div class="markdown-body">
-  <h1 class="header">{{link-to "Teamtailor code styleguide" "application"}}</h1>
+<div class="page-wrapper markdown-body">
+  <div class="header-nav">
+    <h1 class="header">{{link-to "Teamtailor code styleguide" "application"}}</h1>
 
-  <nav class="language-navigation">
-    {{#each model as |language|}}
-      {{link-to language.title "language" language class="language-navigation__link"}}
-    {{/each}}
-  </nav>
-
-  {{liquid-outlet}}
+    <nav class="language-navigation">
+      {{#each model as |language|}}
+        {{link-to language.title "language" language class="language-navigation__link"}}
+      {{/each}}
+    </nav>
+  </div>
+  {{outlet}}
 </div>

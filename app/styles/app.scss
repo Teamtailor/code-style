@@ -1,6 +1,18 @@
-h1, .markdown-body {
-  max-width: 980px;
-  margin: 3em auto;
+body {
+  overflow: hidden;
+}
+
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.header-nav {
+  text-align: center;
+  margin-bottom: 2em;
 }
 
 h1.header {
@@ -21,11 +33,33 @@ h1.header {
   }
 }
 
+.language-page {
+  display: flex;
+
+  &__index {
+    flex: 1;
+    font-size: 13px;
+    overflow: auto;
+    margin-left: auto;
+    max-width: 350px;
+    min-width: 100px;
+  }
+
+  &__articles {
+    flex: 1;
+    flex-basis: 980px;
+    max-width: 980px;
+    margin-right: auto;
+    overflow: auto;
+  }
+}
+
 .article {
   margin-bottom: 3em;
   overflow: hidden;
 
-  &__header {
+  h2.article__header {
+    margin-top: 0;
     display: flex;
     justify-content: space-between;
   }
