@@ -6,9 +6,10 @@ export default function() {
   //     this.use('toLeft'),
   //     this.reverse('toRight')
   //   );
+
   this.transition(
-    this.fromRoute('index'),
-    this.toRoute('content'),
+    this.fromRoute('language.index'),
+    this.toRoute('language.content'),
     this.use(
       'explode',
       {
@@ -18,12 +19,8 @@ export default function() {
       {
         use: ['fade', { duration: 100 }],
       }
-    )
-  );
-
-  this.transition(
-    this.fromRoute('content'),
-    this.use(
+    ),
+    this.reverse(
       'explode',
       {
         matchBy: 'data-content-id',
