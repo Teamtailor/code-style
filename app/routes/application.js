@@ -4,4 +4,7 @@ export default Route.extend({
   model() {
     return this.store.findAll('language');
   },
+  afterModel() {
+    return this.store.findAll('content');
+  },
 });
