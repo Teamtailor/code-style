@@ -12,6 +12,7 @@ module.exports = function(defaults) {
   let contentsJson = new StaticSiteJson(`content`, {
     contentFolder: `content`,
     type: 'contents',
+    references: ['language'],
     collections: [
       {
         src: `content`,

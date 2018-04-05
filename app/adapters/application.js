@@ -5,6 +5,10 @@ export default DS.JSONAPIAdapter.extend({
   buildURL(modelName, id, snapshot, requestType) {
     let url;
 
+    if (id) {
+      id = id.replace('-', '/');
+    }
+
     if (requestType === 'findRecord') {
       url = [modelName, `${id}.json`];
     } else if (requestType === 'findAll') {
