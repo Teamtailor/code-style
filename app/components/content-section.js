@@ -1,12 +1,14 @@
 /* globals Prism */
 
 import Component from '@ember/component';
-import { get, computed } from '@ember/object';
+import { get, set, computed } from '@ember/object';
 
 export default Component.extend({
   tagName: 'section',
   classNames: ['article'],
   attributeBindings: ['content.id:data-content-id'],
+
+  shouldHighlight: true,
 
   githubLink: computed('content.id', function() {
     let path = get(this, 'content.id').replace('-', '/');
@@ -15,6 +17,9 @@ export default Component.extend({
 
   didRender() {
     this._super(...arguments);
-    Prism.highlightAll();
+    if (get(this, 'shouldHighlight')) {
+      Prism.highlightAllUnder(this.$()[0]);
+      set(this, 'shouldHighlight', false);
+    }
   },
 });
