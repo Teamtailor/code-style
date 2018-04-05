@@ -1,5 +1,6 @@
 ---
 title: How to indent handlebars?
+language: ember
 ---
 
     {{#if true}}

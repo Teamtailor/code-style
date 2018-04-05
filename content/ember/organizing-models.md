@@ -1,5 +1,6 @@
 ---
 title: Organizing models
+language: ember
 ---
 
 Models should be grouped as follows:

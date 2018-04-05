@@ -1,5 +1,6 @@
 ---
 title: Don’t interpolate names of components
+language: ember
 ---
 
 Using interpolation makes it really hard to grep through the code and know which components are actually in use.

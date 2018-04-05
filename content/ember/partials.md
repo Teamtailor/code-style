@@ -1,5 +1,6 @@
 ---
 title: Don’t use partials
+language: ember
 ---
 
 Prefer components over partials. Argue for using partials.

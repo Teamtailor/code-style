@@ -1,5 +1,6 @@
 ---
 title: Organizing modules
+language: ember
 ---
 
 1.  injected stuff

@@ -1,5 +1,6 @@
 ---
 title: Don’t be afraid to extract `utils` or `helpers`
+language: ember
 ---
 
 > Add a good example on here

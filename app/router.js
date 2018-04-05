@@ -7,7 +7,9 @@ const Router = EmberRouter.extend({
 });
 
 Router.map(function() {
-  this.route('content', { path: ':content_id' });
+  this.route('language', { path: '/:language_id' }, function() {
+    this.route('content', { path: '/:content_id' });
+  });
 });
 
 export default Router;

@@ -1,5 +1,6 @@
 ---
 title: Prefer shims over destructuring (> Ember 2.16)
+language: ember
 ---
 
     // Ember < 2.16 - BAD

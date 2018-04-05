@@ -1,5 +1,6 @@
 ---
 title: Don’t have side-effects in computed properties
+language: ember
 ---
 
     export default Computed.extend({

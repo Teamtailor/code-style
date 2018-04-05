@@ -12,7 +12,7 @@ export default DS.JSONAPIAdapter.extend({
     if (requestType === 'findRecord') {
       url = [modelName, `${id}.json`];
     } else if (requestType === 'findAll') {
-      url = [modelName, `all${modelName}.json`];
+      url = [modelName, `all.json`];
     } else {
       return this._super(...arguments);
     }

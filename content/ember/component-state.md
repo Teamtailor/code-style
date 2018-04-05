@@ -1,5 +1,6 @@
 ---
 title: Avoid storing state in components
+language: ember
 ---
 
 Make the controller own the state and handle changes to that state and keep the components really dumb. (components shouldnt mutate stuff it gets passed)

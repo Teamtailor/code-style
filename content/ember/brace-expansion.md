@@ -1,5 +1,6 @@
 ---
 title: Use brace expansion
+language: ember
 ---
 
     // Good

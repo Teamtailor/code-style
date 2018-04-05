@@ -1,5 +1,6 @@
 ---
 title: Use `get` and `set`
+language: ember
 ---
 
     // Good
