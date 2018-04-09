@@ -6,14 +6,14 @@ language: ember
 ```javascript
   // Good
   export default Controller.extend({
-    job: computed.alias('model'),
+    job: alias('model'),
 
-    title: computed.alias('job.title'),
+    title: alias('job.title'),
   });
 
   // Bad, implied we're working with a <code>job</code> model
   export default Controller.extend({
-    title: computed.alias('model.title'),
+    title: alias('model.title'),
   });
 ```
 
