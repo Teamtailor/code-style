@@ -3,8 +3,6 @@ title: Nested selectors
 language: css
 ---
 
-### Nested selectors
-
 Do not nest selectors more than needed!
 
 **Bad**
