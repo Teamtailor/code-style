@@ -19,7 +19,7 @@ Do not nest selectors more than needed!
 }
 ```
 
-**Better**
+**Good**
 
 ```scss
 .avatar {
