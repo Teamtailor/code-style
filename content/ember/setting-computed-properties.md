@@ -7,15 +7,15 @@ This will keep the ability of the property to be still computed
 
 ```javascript
 // Good
-  fullName: computed('firstName', 'lastName', {
-    get(key) {
-      return `${this.get('firstName')} ${this.get('lastName')}`;
-    },
-    set(key, value) {
-      return value;
-    }
-  })
-  set(this, 'fullName', 'Roman Polansky');
+fullName: computed('firstName', 'lastName', {
+  get() {
+    return `${this.get('firstName')} ${this.get('lastName')}`;
+  },
+  set(key, value) {
+    return value;
+  }
+})
+set(this, 'fullName', 'Roman Polansky');
 
 
 // Bad
