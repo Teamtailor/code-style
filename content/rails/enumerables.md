@@ -54,18 +54,5 @@ Usually it is better to use an enumerable over a boolean flag. They are easier t
   user.status # => archived
 
   # scopes
-  User.archived == User.where(status: :created)
-```
-
-Boolean flags are not bad, however too many flags are not good.
-
-```ruby
-  # Good
-  enum status: { archived: 0, finished: 1 }
-  add_column :post, :status, :integer, default: 0
-
-  # Bad
-
-  add_column :post, :archived, :boolean
-  add_column :post, :finished, :boolean
+  User.archived == User.where(status: :archived)
 ```
