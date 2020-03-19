@@ -23,11 +23,11 @@ In `.modules.scss` files
 ```scss
 // button.module.scss
 
-.__root {}
+.root {}
 
-.--modifierName {}
+.root--modifierName {}
 
-.__iconArea--modifierName {}
+.root__iconArea--modifierName {}
 ```
 
 In `.scss` files 
